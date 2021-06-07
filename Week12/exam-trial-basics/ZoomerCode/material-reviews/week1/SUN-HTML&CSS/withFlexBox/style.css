@@ -1,0 +1,61 @@
+body{
+    margin-top: 0px;
+    background-color: wheat; 
+    font-size: 25px;
+}
+
+main{
+    padding: 10% 5%;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    height: 4em;
+    background-color: grey;
+}
+
+header>img{
+    max-height: 2.5em;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+nav{
+    margin-left: auto;
+}
+
+nav > a{
+    float: right;
+    padding: 5px;
+    margin: 10px;
+    border: solid black 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+nav>a:hover{
+    color:blue;
+}
+
+/*tag(1) < class(10) < id (100) */
+
+.characters{
+    background-color: teal;
+}
+
+section{
+    background-color: red;
+}
+
+#lastCharacter{
+    background-color: yellow;
+}
+
+

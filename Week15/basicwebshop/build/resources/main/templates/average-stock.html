@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My shop Stock</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+<div>
+    <h1 class="title">My shop</h1>
+</div>
+
+<div id="averagestockbuttons">
+    <a href="/only-available" class="btn btn-danger">ONLY AVAILABLE</a>
+    <a href="/cheapest-first" class="btn btn-danger">CHEAPEST FIRST</a>
+    <a href="/contains-Nike" class="btn btn-danger">CONTAINS NIKE</a>
+    <a href="/average-stock" class="btn btn-danger">AVERAGE STOCK</a>
+    <a href="/most-expensive-available" class="btn btn-danger">MOST EXPENSIVE AVAILABLE</a>
+
+</div>
+
+<div id="averagestockid">
+    <p th:text="'Average stock: ' + ${averageStock}"></p>
+</div>
+
+</body>
+</html>

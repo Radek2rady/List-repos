@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica;
+    background-color: cadetblue;
+}
+
+table {
+    border-spacing: 0;
+    font-size: 1.5em;
+    border-radius: 0.3em;
+    overflow: hidden;
+    margin: auto;
+}
+
+td, th {
+    width: 250px;
+    padding: 0.5em;
+    text-align: left;
+}
+
+tbody {
+    background-color: #ddd;
+    color: #444;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tbody td {
+    border: 1px solid #aaa;
+}
+
+tbody tr:first-child td {
+    border-top-width: 0.125em;
+}
+
+thead {
+    background-color: darkslategray;
+    color:white;
+}
+
+thead th {
+    border: 1px solid #444;
+}

@@ -1,0 +1,4 @@
+You should avoid specific new line 
+separators such as "\n" or "\r\n" that depends 
+on the OS and favor the use of the 
+System.lineSeparator() constant that applies at runt

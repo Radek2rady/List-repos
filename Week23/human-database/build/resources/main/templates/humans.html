@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Humans database</title>
+</head>
+<body>
+<a href="/">Back home</a>
+<h1>Human database 1.0</h1>
+<h3>Humans from country: <span th:text="${location}"></span></h3>
+<div th:unless="${humans.isEmpty()}">
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr th:each="human: ${humans}">
+            <td th:text="${human.getFirstName()}"></td>
+            <td th:text="${human.getLastName()}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+    width: 80%;
+    margin: 10px;
+}
+
+.btn-danger {
+    background-color: orangered !important;
+}
+
+#titlediv {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: solid lightskyblue 1px;
+    margin-bottom: 15px;
+}
+
+#index2title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: solid lightskyblue 1px;
+    margin-bottom: 15px;
+}
+
+.title {
+    color: lightskyblue;
+    font-size: 1.5em;
+}
+
+#searchdiv label {
+    color: orangered;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#searchdiv {
+    margin: 10px 0 20px 0;
+    width: 100%;
+}
+
+#searching form {
+    width: 100%;
+
+}
+
+#searching input {
+    border: solid 2px orangered;
+    border-radius: 5px;
+    width: 85%;
+    height: 38px;
+}
+
+
+#searchdiv button {
+    margin-bottom: 5px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#tableid th {
+    border: 2px solid white;
+}
+
+#tableid thead th {
+    vertical-align: middle;
+}
+
+#tableid td {
+    border: 2px solid white;
+}
+
+table td {
+    color: black;
+}
+
+table th {
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+.titleindex2 {
+    color: lightskyblue;
+    border-bottom: solid lightskyblue 1px;
+    margin-bottom: 15px;
+}
+
+#buttonsindex2 {
+    height: 40px;
+    margin: 0;
+    margin-right: 0;
+}
+
+#searchdivindex2 {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    /*width: 85%;*/
+}
+
+#searchdivindex2 a {
+    margin: 10px;
+}
+
+#searchdivindex2 label {
+    margin: 10px;
+    color: orangered;
+}
+
+#searchingInputindex2 {
+    border: solid 1px orangered;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#searchingindex2 {
+    flex-direction: column;
+}
+
+.btn-danger {
+    background-color: orangered !important;
+}

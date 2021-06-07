@@ -1,0 +1,8 @@
+com/greenfoxacademy/programmerfoxclub/models/Fox.java
+ com.greenfoxacademy.programmerfoxclub.models.Fox
+com/greenfoxacademy/programmerfoxclub/ProgrammerFoxClubApplication.java
+ com.greenfoxacademy.programmerfoxclub.ProgrammerFoxClubApplication
+com/greenfoxacademy/programmerfoxclub/services/FoxService.java
+ com.greenfoxacademy.programmerfoxclub.services.FoxService
+com/greenfoxacademy/programmerfoxclub/controllers/MainController.java
+ com.greenfoxacademy.programmerfoxclub.controllers.MainController

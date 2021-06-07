@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+</head>
+<body>
+<h1>Welcome to Programmer Fox Club!</h1>
+<p>Please provide your name, so you can assciate it to your pet!</p>
+
+<!--<p th:text="${error}" th:style="|color: ${color}|"></p>-->
+<form th:action="@{/login}" th:method="POST">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="GO">
+</form>
+</body>
+</html>

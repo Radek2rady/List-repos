@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aggregate page</title>
+</head>
+<body>
+<a href="/">Back home</a>
+<h1>Human database 1.0</h1>
+<h2>Aggregated date</h2>
+<ul>
+    <li>The average age is <span th:text="${averageAge}"></span></li>
+    <li>Male ratio is <span th:text="${percentageMale}"></span></li>
+    <li>Female ratio is <span th:text="${percentageFemale}"></span></li>
+    <li>Most human is from <span th:each="location:${topLocation}" th:text="${location}"></span></li>
+<!--    <div th:each="toploc: ${topLocation}">-->
+<!--    <li>Most human is from <span th:text="${toploc.getLocation()}"></span></li>-->
+<!--    </div>-->
+</ul>
+
+</body>
+</html>

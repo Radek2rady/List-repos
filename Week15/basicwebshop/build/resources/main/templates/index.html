@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<div id="titlediv">
+    <h1 class="title">My shop</h1>
+    <a href="/more-filters" class="title">More >>></a>
+</div>
+
+<div id="buttons">
+    <a href="/only-available" class="btn btn-danger">ONLY AVAILABLE</a>
+    <a href="/cheapest-first" class="btn btn-danger">CHEAPEST FIRST</a>
+    <a href="/contains-Nike" class="btn btn-danger">CONTAINS NIKE</a>
+    <a href="/average-stock" class="btn btn-danger">AVERAGE STOCK</a>
+    <a href="/most-expensive-available" class="btn btn-danger">MOST EXPENSIVE AVAILABLE</a>
+</div>
+
+<div id="searchdiv">
+    <label for="searching">Search for:</label>
+    <form th:action="@{/search}" th:method="POST" id="searching">
+        <input type="text" name="product" id="searchingInput" placeholder="...something like nike">
+        <button type="submit" class="btn btn-danger">SEARCH</button>
+    </form>
+</div>
+<div id="tableid">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th style="width: 15px">Quantity of stock</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="shopItem:${shopItems}" th:object="${shopItem}">
+            <td th:text="*{name}"></td>
+            <td th:text="*{description}"></td>
+            <td th:text="*{price}" style="text-align: center"></td>
+            <td th:text="*{quantityStock}" style="text-align: center"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

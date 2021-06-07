@@ -1,0 +1,16 @@
+com/greenfoxacademy/hellobeanworld/HelloDIproject/Printer.java
+ com.greenfoxacademy.hellobeanworld.HelloDIproject.Printer
+com/greenfoxacademy/hellobeanworld/HellobeanworldApplication.java
+ com.greenfoxacademy.hellobeanworld.HellobeanworldApplication
+com/greenfoxacademy/hellobeanworld/PlayingColors/BlueColor.java
+ com.greenfoxacademy.hellobeanworld.PlayingColors.BlueColor
+com/greenfoxacademy/hellobeanworld/PlayingColors/WhiteColor.java
+ com.greenfoxacademy.hellobeanworld.PlayingColors.WhiteColor
+com/greenfoxacademy/hellobeanworld/PlayingColors/MyColor.java
+ com.greenfoxacademy.hellobeanworld.PlayingColors.MyColor
+com/greenfoxacademy/hellobeanworld/PlayingColors/RedColor.java
+ com.greenfoxacademy.hellobeanworld.PlayingColors.RedColor
+com/greenfoxacademy/hellobeanworld/PlayingColors/BlackColor.java
+ com.greenfoxacademy.hellobeanworld.PlayingColors.BlackColor
+com/greenfoxacademy/hellobeanworld/PlayingColors/GreenColor.java
+ com.greenfoxacademy.hellobeanworld.PlayingColors.GreenColor

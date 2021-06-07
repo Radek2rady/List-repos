@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo CRUD App</title>
+</head>
+<body>
+
+<h1>TODOS FOR TODAY:</h1>
+<div>
+    <a href="/todo/add">Add new todo</a>
+
+
+</div>
+<div><br></div>
+<div th:if="${todos.isEmpty()}">
+</div>
+<div th:unless="${todos.isEmpty()}">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Urgent</th>
+            <th>Done</th>
+            <th>Date of creation</th>
+        </tr>
+        <tr th:each="todo: ${todos}">
+            <td th:text="${todo.getId()}"></td>
+            <td>
+                <form th:action="@{/todo/{id}/edit}" method="post">
+                    <a th:href="@{/todo/{id}/edit(id=${todo.id})}" th:text="${todo.getTitle()}"></a>
+                </form>
+            </td>
+            <td th:text="${todo.isUrgent()}"></td>
+            <td th:text="${todo.isDone()}"></td>
+            <td th:text="${todo.getDate()}"></td>
+            <td>
+                <form th:action="@{/todo/{id}/delete}" method="post">
+                    <a th:href="@{/todo/{id}/delete(id=${todo.id})}">delete</a>
+                </form>
+            </td>
+            <td>
+                <form th:action="@{/todo/{id}/edit}" method="post">
+                    <a th:href="@{/todo/{id}/edit(id=${todo.id})}">edit</a>
+                </form>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

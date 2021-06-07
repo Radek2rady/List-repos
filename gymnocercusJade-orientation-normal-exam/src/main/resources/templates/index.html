@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Quiz Game</title>
+</head>
+<body>
+<h1>The Quiz Game</h1>
+<a href="/question">Add a Question</a>
+<a href="/quiz" th:if="${!question.isEmpty()}">Start a Quiz</a>
+<h2 th:if="${score != null}" th:text="|Your score till now is: ${score}|"></h2>
+</body>
+</html>

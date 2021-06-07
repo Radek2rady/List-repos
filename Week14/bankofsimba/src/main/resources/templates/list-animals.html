@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" th:href="@{/style.css}"/>
+<head>
+    <meta charset="UTF-8">
+    <title>Animals</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Balance</th>
+        <th>Animal Type</th>
+        <th>Counting</th>
+        <th>Good or Bad</th>
+        <th>Owner</th>
+    </tr>
+    </thead>
+
+    <tr th:each="bankAccount:${bankAccounts}" th:object="${bankAccount}">
+        <td th:text="*{name}"></td>
+        <td th:text="*{#numbers.formatDecimal(balance, 1, 'POINT', 2, 'COMMA')}"></td>
+        <td th:text="*{animalType}"></td>
+        <td th:text="${bankAccountStat.count}"></td>
+        <td th:text="*{getGoodOrBad}"></td>
+        <td th:if="${bankAccount.name == 'Simba'}" th:utext="*{owner}" th:style="'background-color: orange'"></td>
+        <td th:unless="${bankAccount.name == 'Simba'}" th:utext="*{owner}"></td>
+    </tr>
+</table>
+
+<form action="/add-animal" method="post">
+    <label for="name">Name of animal</label>
+    <input autofocus required id="name" name="name" placeholder="Name">
+
+    <label for="balance">Balance animal</label>
+    <input required id="balance" name="balance" placeholder="balance animal">
+
+    <label for="animalType">Type animal</label>
+    <input required id="animalType" name="animalType" placeholder="type animal">
+
+    <label for="owner">Owner</label>
+    <input id="owner" name="owner" placeholder="owner">
+
+    <button type="submit"> SUBMIT</button>
+
+</form>
+
+</body>
+</html>

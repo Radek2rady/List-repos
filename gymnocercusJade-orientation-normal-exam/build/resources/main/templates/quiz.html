@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz page</title>
+</head>
+<body>
+<h1>Question:</h1>
+<div th:object="${question}">
+    <h3 th:text="*{textQuestion}"></h3>
+    <a th:href="@{/quiz/{questionId}/1/{score}(questionId=${question.id}, score=${score})}" th:text="*{answer1}"></a>
+    <a th:href="@{/quiz/{questionId}/2/{score}(questionId=${question.id}, score=${score})}" th:text="*{answer2}"></a>
+    <a th:href="@{/quiz/{questionId}/3/{score}(questionId=${question.id}, score=${score})}" th:text="*{answer3}"></a>
+    <a th:href="@{/quiz/{questionId}/4/{score}(questionId=${question.id}, score=${score})}" th:text="*{answer4}"></a>
+</div>
+<div th:if="${questionId}"></div>
+<p th:if="${displayCorrect}" th:text="${displayCorrect}"></p>
+
+</body>
+</html>

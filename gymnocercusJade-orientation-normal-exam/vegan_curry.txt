@@ -1,0 +1,8 @@
+Potatoes dkg 15
+Tomatoes dkg 5
+Garbanzo_beans dkg 5
+Peas dkg 5
+Garlic cloves 1
+Cumin teaspoons 1
+Curry_powder teaspoons 1
+Garam_masala teaspoons 1

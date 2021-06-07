@@ -1,0 +1,52 @@
+Tape casting
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+Tape casting (also called doctor blading and knife coating)[1] is a casting process used in the manufacture of thin ceramic tapes and sheets from ceramic slurry.[2] The ceramic slurry is cast in a thin layer onto a flat surface and then dried and sintered.[3]
+
+
+Contents
+1	History
+2	Production process
+2.1	Ingredients
+2.2	Slurry manufacturing
+2.3	Slurry casting
+2.4	Green sheet drying
+3	Usage
+4	References
+5	External links
+History
+Tape casting was first described as a method to mass-produce capacitors.[1] In this first published description from 1947 the process was described as:[4]
+
+"A machine is described which extrudes a ceramic slip with a resin binder on a moving belt. The thin sheet is strong enough when dry to be stripped off and cut or punched to any desired flat shape and fired satisfactorily."
+
+In 1960 a patent was filed for multilayered tape casting and in 1996 the first tapes under 5 μm were cast.[1]
+
+Production process
+[icon]
+This section needs expansion. You can help by adding to it. (April 2016)
+
+Schematic representation of the tape casting process. In brown the slurry, in grey the doctor knife and the arrow headed line indicates the surface on which the slurry is applied and its moving direction. This is just one of many different designs.
+The tape casting process converts ceramic powder to a thin film by making a liquid form of it, casting it on a flat plane and drying it.
+
+Ingredients
+The starting point for the tape casting process is the powder that the 'tape' is to be consisting of. This is the active component of the final product and the other contents, such as binder material and solvents have to be compatible with the powder. The powder is in general very fine, with maximum particle sizes of 5 micrometers.[5] The solvent serves the purpose of allowing the powder to be cast, as if it were a liquid, and also to spread secondary components through the tape. Surfactants are added as well, to control the behaviour of the tape surface. Furthermore, binder material is added. This determines the bulk structure and mechanical characteristics of the tape.[1]
+
+Slurry manufacturing
+The slurry ingredients as mentioned in the previous section are mixed and stored in tanks.
+
+Slurry casting
+
+Tape casting machine
+The slip material is transported in pipes from tanks to the casting machine. The slip may be filtered before being applied, to remove imperfect particles. The cast slurry is called a green layer or green sheet (this is not referring to the colour of the sheet), and needs further processing such as cutting and drying.[5]
+
+During casting it is important to cast a perfectly flat surface without streaks, for this different casting mechanisms have been designed to minimise slip streams in the slurry. The blades that flatten and thin the cast surface are called doctor blades. These come in different shapes such as thick or thin flat cutting surfaces, rounded edges and knife blade-shaped edges.[1] For tapes that are cast thinner than 50 micrometer, the coating is not applied from the top, but from the side (slot-die coater) or bottom (lip coater and micro gravure coater).
+
+The surface on which is cast can be made from steel, glass, coated paper and polymers. Steel is the most economical surface, but removal of thin sheets from a steel surface is difficult and the steel surface needs relatively frequent replacement due to damaging.[1]
+
+Green sheet drying
+The cast tape only dries from one side, the exposed surface, as the casting surface is impermeable. Drying is dependent on two processes, namely the evaporation of the solvent from the surface, and the diffusion of the solvent through the tape towards the single exposed surface. The evaporation may be sped up by applying air drying. However, usually evaporation should be limited to ensure steady diffusion of the solvent. If the solvent does not leave the sheet in a controlled fashion, the tape may crack or curl.[1]
+
+Several processing steps may be executed depending on the product requirement, such as cutting, laminating, punching or thermal treatment.[6]
+
+Usage
+The process is used in the production of capacitors, polymer batteries, photovoltaics, electrodes for molten carbonate fuel cells. Films as thin as 5 micrometer can be produced using tape casting.[1][5]

@@ -1,0 +1,17 @@
+body {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+#perrorlogin {
+    text-align: center;
+}
+
+#naverrorlogin {
+ margin-left: 38%;
+}

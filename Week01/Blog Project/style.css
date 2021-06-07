@@ -1,0 +1,55 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 10%;
+  padding-top: unset;
+  margin-top: 0;
+}
+
+header {
+  background-color: dimgrey;
+  height: 50px;
+  width: 100%;
+  border: black solid;
+  margin-left: -14%;
+  border: 2px solid;
+}
+
+header > h1 {
+  position: relative;
+  text-align: left;
+  display: table-cell;
+  width: 80%;
+  padding: 5px 9rem;
+}
+
+#form {
+  font-family: 'Happy Monkey', cursive;
+}
+
+form >h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#submit {
+  border-radius: 10px;
+  height: 30px;
+  width: 80px;
+  text-align: center;
+  border: 1px solid;
+  margin-top: 10px;
+}
+
+#title {
+  width: 200px;
+}
+
+#posts {
+  font-family: 'Happy Monkey', cursive;
+}
+
+.postlist {
+  border: 1px solid;
+  padding: 2%;
+  margin-bottom: 2em;
+}

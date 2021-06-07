@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index page</title>
+</head>
+<body>
+<h1>Human database 1.0</h1>
+<a href="/humans/aggregate">Aggregated data</a>
+<form action="/humans">
+    <label for="location">Location</label>
+    <input type="text" id="location" name="location" required>
+    <button type="submit">Search</button>
+</form>
+
+</body>
+</html>

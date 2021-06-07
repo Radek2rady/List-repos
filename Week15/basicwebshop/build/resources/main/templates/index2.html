@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>My shop Detailed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="index2title">
+    <h1><a href="/list" class="title">My shop</a></h1>
+</div>
+<div id="buttonsindex2">
+    <a href="/filter-clothes-shoes" class="btn btn-danger">CLOTHES AND SHOES</a>
+    <a href="/filter-electro" class="btn btn-danger">ELECTRONICS</a>
+    <a href="/filter-beverages-snacks" class="btn btn-danger">BEVERAGES AND SNACKS</a>
+    <a href="/euro" class="btn btn-danger">EURO</a>
+    <a href="/oroginal-currency" class="btn btn-danger">ORIGINAL CURRENCY</a>
+
+</div>
+<div id="searchdivindex2">
+    <a href="/above-price" class="btn btn-danger">Above</a>
+    <a href="/below" class="btn btn-danger">Below</a>
+    <a href="/exactly" class="btn btn-danger">Exactly</a>
+
+    <label for="searchingindex2">Filter by price:</label>
+    <form th:action="@{/filter-price}" th:method="POST" id="searchingindex2">
+        <input type="text" name="price" id="searchingInputindex2" placeholder="...e.g.: 300">
+    </form>
+</div>
+<div id="tableidindex2">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th style="width: 15px">Quantity of stock</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="shopItem:${shopItems}" th:object="${shopItem}">
+            <td th:text="*{name}"></td>
+            <td th:text="*{description}"></td>
+            <td th:text="*{price}" style="text-align: center"></td>
+            <td th:text="*{quantityStock}" style="text-align: center"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

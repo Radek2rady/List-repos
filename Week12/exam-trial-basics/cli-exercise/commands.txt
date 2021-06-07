@@ -1,0 +1,4 @@
+rm */*.txt
+mv program/assets/*.jpg exam/images/
+mv program/assets/*.png exam/images/
+push commit -m  "delete txt files and move image files"

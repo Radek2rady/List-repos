@@ -1,0 +1,2 @@
+com/greenfoxacademy/hellobeanworld/HellobeanworldApplicationTests.java
+ com.greenfoxacademy.hellobeanworld.HellobeanworldApplicationTests

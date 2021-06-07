@@ -1,0 +1,8 @@
+com/greenfox/basicwebshop/BasicwebshopApplication.java
+ com.greenfox.basicwebshop.BasicwebshopApplication
+com/greenfox/basicwebshop/models/ShopItem.java
+ com.greenfox.basicwebshop.models.ShopItem
+com/greenfox/basicwebshop/controllers/HelloController.java
+ com.greenfox.basicwebshop.controllers.HelloController
+com/greenfox/basicwebshop/controllers/ShopWebController.java
+ com.greenfox.basicwebshop.controllers.ShopWebController

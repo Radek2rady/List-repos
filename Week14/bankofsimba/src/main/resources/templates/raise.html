@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<form action="@{/raise}" th:method="POST">
+    <label for="raise1">Raise King by 100 and other by 10</label>
+    <input type="text" id="raise1" name="increment" placeholder="number of Animal" autofocus required>
+
+    <button type="submit">SUBMIT</button>
+</form>
+
+<form th:action="@{/add-animal}" th:method="POST">
+    <label for="name">Name of animal</label>
+    <input autofocus required id="name" name="name" placeholder="Name">
+
+    <label for="balance">Balance animal</label>
+    <input required id="balance" name="balance" placeholder="balance animal">
+
+    <label for="animalType">Type animal</label>
+    <input required id="animalType" name="animalType" placeholder="type animal">
+
+    <label for="owner">Owner</label>
+    <input required id="owner" name="owner" placeholder="owner">
+    <button type="submit"> SUBMIT</button>
+</form>
+</body>
+</html>

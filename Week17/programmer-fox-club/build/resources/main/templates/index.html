@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Programer Fox</title>
+</head>
+<body>
+<div>
+    <a th:href="|/?name=${name}|">Information</a>
+    <a th:href="|/nutritionStore?name=${name}|">Nutrition Store</a>
+    <a th:href="|/trickCenter?name=${name}|">Trick center</a>
+</div>
+
+<div id="image">
+    <img src="fox.png" alt="Mr Green">
+</div>
+
+<div id="infodiv">
+    <p th:text="${firstPar}"></p>
+    <p th:text="'He knows ' + ${nrTricks} + ' tricks.'"></p>
+</div>
+
+<div id="tricks">
+    <h2>Known tricks</h2>
+    <p th:if="${currentFox.getTricks().isEmpty()}" th:text="${nullTricks}"></p>
+    <ul th:unless="${currentFox.getTricks().isEmpty()}" th:each="trick:${tricks}">
+        <li th:text="*{trick}"></li>
+    </ul>
+</div>
+
+
+</body>
+</html>

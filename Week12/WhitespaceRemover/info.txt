@@ -1,0 +1,8 @@
+Write a method that can read and parse a file. It has one input parameter: the name of the file. The method shall remove each duplicated space character so that there is only one remaining space between the words, just like in properly written texts. It writes the clean text to an output.txt.
+
+The method should throw a specific Exception with the message ("File does not exist on the given path") if the input file name does not exist.
+
+Output:
+I'm not saying that any of the
+Linq answers that people have provided here are bad,
+but I guess I feel like there...

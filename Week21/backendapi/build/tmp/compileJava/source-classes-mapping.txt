@@ -1,0 +1,66 @@
+com/gfa/backendapi/models/ArrayHandlerResultArray.java
+ com.gfa.backendapi.models.ArrayHandlerResultArray
+com/gfa/backendapi/models/DTO/LogDTO.java
+ com.gfa.backendapi.models.DTO.LogDTO
+com/gfa/backendapi/repositories/DoublingRepo.java
+ com.gfa.backendapi.repositories.DoublingRepo
+com/gfa/backendapi/models/ErrorDoubling.java
+ com.gfa.backendapi.models.ErrorDoubling
+com/gfa/backendapi/repositories/GreeterRepo.java
+ com.gfa.backendapi.repositories.GreeterRepo
+com/gfa/backendapi/models/SithText.java
+ com.gfa.backendapi.models.SithText
+com/gfa/backendapi/services/ArrayHandlerServiceImpl.java
+ com.gfa.backendapi.services.ArrayHandlerServiceImpl
+com/gfa/backendapi/services/LogService.java
+ com.gfa.backendapi.services.LogService
+com/gfa/backendapi/models/Hungarian.java
+ com.gfa.backendapi.models.Hungarian
+com/gfa/backendapi/services/UntilServiceImpl.java
+ com.gfa.backendapi.services.UntilServiceImpl
+com/gfa/backendapi/services/GreeterServiceImpl.java
+ com.gfa.backendapi.services.GreeterServiceImpl
+com/gfa/backendapi/models/ErrorsGreeter.java
+ com.gfa.backendapi.models.ErrorsGreeter
+com/gfa/backendapi/models/UntilResult.java
+ com.gfa.backendapi.models.UntilResult
+com/gfa/backendapi/models/Doubling.java
+ com.gfa.backendapi.models.Doubling
+com/gfa/backendapi/services/ArrayHandlerService.java
+ com.gfa.backendapi.services.ArrayHandlerService
+com/gfa/backendapi/models/Greeter.java
+ com.gfa.backendapi.models.Greeter
+com/gfa/backendapi/models/Teve.java
+ com.gfa.backendapi.models.Teve
+com/gfa/backendapi/repositories/LogRepo.java
+ com.gfa.backendapi.repositories.LogRepo
+com/gfa/backendapi/controllers/ArrayHandlerController.java
+ com.gfa.backendapi.controllers.ArrayHandlerController
+com/gfa/backendapi/services/UntilService.java
+ com.gfa.backendapi.services.UntilService
+com/gfa/backendapi/services/DoublingServiceImpl.java
+ com.gfa.backendapi.services.DoublingServiceImpl
+com/gfa/backendapi/services/DoublingService.java
+ com.gfa.backendapi.services.DoublingService
+com/gfa/backendapi/BackendapiApplication.java
+ com.gfa.backendapi.BackendapiApplication
+com/gfa/backendapi/models/Until.java
+ com.gfa.backendapi.models.Until
+com/gfa/backendapi/models/ArrayHandler.java
+ com.gfa.backendapi.models.ArrayHandler
+com/gfa/backendapi/models/Log.java
+ com.gfa.backendapi.models.Log
+com/gfa/backendapi/services/SithService.java
+ com.gfa.backendapi.services.SithService
+com/gfa/backendapi/models/ArrayHandlerResult.java
+ com.gfa.backendapi.models.ArrayHandlerResult
+com/gfa/backendapi/models/Sith.java
+ com.gfa.backendapi.models.Sith
+com/gfa/backendapi/models/Appendable.java
+ com.gfa.backendapi.models.Appendable
+com/gfa/backendapi/services/GreeterService.java
+ com.gfa.backendapi.services.GreeterService
+com/gfa/backendapi/services/HungarianService.java
+ com.gfa.backendapi.services.HungarianService
+com/gfa/backendapi/controllers/MainController.java
+ com.gfa.backendapi.controllers.MainController

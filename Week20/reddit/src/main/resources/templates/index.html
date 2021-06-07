@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    // now after login shows userID but not giving to the link for submit etc...
+    // Field error in object 'user' on field 'id': rejected value [null]; codes [typeMismatch.user.id,typeMismatch.id,typeMismatch.java.lang.Long,typeMismatch]; arguments [org.springframework.context.support.DefaultMess
+    <a class="navbar-brand" th:href="'/submit?userID=' + ${user.getId()}">Submit new post</a>
+    <a class="navbar-brand" href="/register">Register new user</a>
+    <a class="navbar-brand" href="/login">Login user</a>
+    <a class="navbar-brand" th:if="${user.getUsername()}" th:href="${user.getUsername()}" th:text="'You are signed as: ' + ${user.getUsername()}"></a>
+</nav>
+<h1>Trending posts</h1>
+<div th:each="post: ${five}" th:object="${post}">
+    <ul class="list-inline">
+        <li class="h3" th:text="*{vote}"></li>
+        <li>
+
+            <a th:href="@{/voteUp/{id}(id=${post.id})}">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </button>
+            </a>
+        </li>
+
+        <li>
+
+            <a th:href="@{/voteDown/{id}(id=${post.id})}">
+
+
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
+                        data-field="quant[1]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                </button>
+            </a>
+        </li>
+
+        <li><a th:href="*{URL}" th:text="*{title}"></a></li>
+    </ul>
+
+</div>
+
+<h1>All posts</h1>
+
+<div th:each="post: ${posts}" th:object="${post}">
+    <ul class="list-inline">
+        <li class="h3" th:text="*{vote}"></li>
+        <li>
+
+            <a th:href="@{/voteUp/{id}(id=${post.id})}">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </button>
+            </a>
+        </li>
+
+        <li>
+            <!--                <a th:href="@{/{userID}/voteDown/{id}(userID=${user.id},id=${post.id})}">-->
+
+            <a th:href="@{/voteDown/{id}(id=${post.id})}">
+
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
+                        data-field="quant[1]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                </button>
+            </a>
+        </li>
+
+        <li><a th:href="*{URL}" th:text="*{title}"></a></li>
+    </ul>
+</div>
+
+<nav>
+    <a th:if="${pageNr > 0}"
+       th:href="@{'/?userID=' + ${user.getId()} + '{/?pageNr=' + ${pageNr - 1}(userID=${user.id})}">previous Page</a>
+    <a th:if="${pageNr < pages/10}"
+       th:href="@{'/?userID=' + ${user.getId()} + '{/?pageNr=' + ${pageNr + 1}(userID=${user.id})}">next Page</a>
+</nav>
+
+</body>
+</html>

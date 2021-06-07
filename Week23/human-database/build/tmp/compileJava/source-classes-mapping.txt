@@ -1,0 +1,14 @@
+com/gfa/humandatabase/HumanDatabaseApplication.java
+ com.gfa.humandatabase.HumanDatabaseApplication
+com/gfa/humandatabase/repositories/HumanRepository.java
+ com.gfa.humandatabase.repositories.HumanRepository
+com/gfa/humandatabase/models/Human.java
+ com.gfa.humandatabase.models.Human
+com/gfa/humandatabase/services/HumanService.java
+ com.gfa.humandatabase.services.HumanService
+com/gfa/humandatabase/models/HumanDTO.java
+ com.gfa.humandatabase.models.HumanDTO
+com/gfa/humandatabase/controllers/HumanController.java
+ com.gfa.humandatabase.controllers.HumanController
+com/gfa/humandatabase/services/HumanServiceImpl.java
+ com.gfa.humandatabase.services.HumanServiceImpl

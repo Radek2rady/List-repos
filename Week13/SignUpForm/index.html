@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="form" class="div form">
+    <form action="https://newsletter-ws.herokuapp.com/register" method="post">
+        <h3>Sign up</h3>
+
+        <label for="username"></label>
+        <input type="text" name="username" id="username" placeholder="Username" autofocus>
+
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="E-mail">
+
+        <label for="password1"></label>
+        <input type="password" name="password" id="password1" placeholder="Password">
+
+        <label for="password2"></label>
+        <input type="password" name="password" id="password2" placeholder="Retype password">
+
+        <input type="submit" id="login" value="SIGN ME UP"/>
+    </form>
+</div>
+
+<div id="or" class="div or">
+    <h2>OR</h2>
+</div>
+<div id="logins" class="div logins">
+    <button id="fb">Log in with facebook</button>
+    <button id="twitter">Log in with Twitter</button>
+    <button id="google">Log in with Google</button>
+</div>
+
+</body>
+</html>

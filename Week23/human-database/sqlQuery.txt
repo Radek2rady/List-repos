@@ -1,0 +1,4 @@
+select applicants.name, countries.country
+from applicants inner join countries
+on applicants.country_id = countries.id
+where applicants.age = 40 and countries.id = 2;
